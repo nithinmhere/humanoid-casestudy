@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Stencil+Text:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Stencil+Text:wght@100..900&family=Big+Shoulders+Text:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #c5c5c5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0c0c0c;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #2e2e2e;
+    border-radius: 20px;
+}
+
+
+/* ------------------Background css------------------- */
+@media only screen and (min-width: 760px){
+    .background {
+        position: absolute;
+        z-index: -1000;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .block-1 {
+        z-index: -1000;
+        width: 6vw;
+        height: 1000vh;
+        border:  .1px solid #6e6e6e;
+    }
+    
+    .block-2 {
+        z-index: -1000;
+        width: 88vw;
+        height: 1000vh;
+        border:  .1px solid #6e6e6e;
+    }
+    
+    
+    #header{
+        width: 100%;
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-family: "Big Shoulders Text", sans-serif;
+    }
+    .back-btn{
+        position: fixed;
+        top: 20px;
+        left: 150px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+    
+    }
+    .back-btn h4{
+        display: none;
+        transition: .5s;
+        color: #000000;
+    }
+    .back-btn:hover h4{display: block;}
+    .back-btn:hover i{transform: translateX(-5px);}
+    #header h3{
+        cursor: pointer;
+    }
+    
+    .StyleGuide{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        margin: 100px auto;
+        font-family: "Big Shoulders Text", sans-serif;
+    }
+    .StyleGuide img{
+        width: 50%;
+        border-radius: 20px;
+        margin-bottom: 100px;
+    }
+    
+    .StyleGuide .figma-logo{
+        width: 50px;
+    }
+    
+}
+
+/* mobile view */
+@media only screen and (max-width: 420px){
+    .background {
+        position: absolute;
+        z-index: -1000;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .block-1 {
+        z-index: -1000;
+        width: 4vw;
+        height: 470vh;
+        border:  .1px solid #6e6e6e;
+    }
+    
+    .block-2 {
+        z-index: -1000;
+        width: 92vw;
+        height: 470vh;
+        border:  .1px solid #6e6e6e;
+    }
+    
+    
+    #header{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        padding-top: 100px;
+        gap: 10px;
+        font-family: "Big Shoulders Text", sans-serif;
+    }
+    .back-btn{
+        position: fixed;
+        top: 20px;
+        left: 40px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+    
+    }
+    .back-btn h4{
+        display: none;
+        transition: .5s;
+        color: #000000;
+    }
+    .back-btn:hover h4{display: block;}
+    .back-btn:hover i{transform: translateX(-5px);}
+    #header h3{
+        cursor: pointer;
+    }
+    #header img{
+        width: 90vw;
+    }
+    #header h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .StyleGuide{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        margin: 100px auto;
+        font-family: "Big Shoulders Text", sans-serif;
+    }
+    .StyleGuide img{
+        width: 90%;
+        border-radius: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .StyleGuide .figma-logo{
+        width: 50px;
+    }
+    
+}
+
+
+/* tablet view */
+@media only screen and (min-width: 421px) and (max-width:750px){
+    .background {
+        position: absolute;
+        z-index: -1000;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .block-1 {
+        z-index: -1000;
+        width: 4vw;
+        height: 875vh;
+        border:  .1px solid #6e6e6e;
+    }
+    
+    .block-2 {
+        z-index: -1000;
+        width: 92vw;
+        height: 875vh;
+        border:  .1px solid #6e6e6e;
+    }
+    
+    
+    #header{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        padding-top: 100px;
+        gap: 10px;
+        font-family: "Big Shoulders Text", sans-serif;
+    }
+    .back-btn{
+        position: fixed;
+        top: 20px;
+        left: 40px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-decoration: none;
+    
+    }
+    .back-btn h4{
+        display: none;
+        transition: .5s;
+        color: #000000;
+    }
+    .back-btn:hover h4{display: block;}
+    .back-btn:hover i{transform: translateX(-5px);}
+    #header h3{
+        cursor: pointer;
+    }
+    #header img{
+        width: 90vw;
+    }
+    #header h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .StyleGuide{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        margin: 100px auto;
+        font-family: "Big Shoulders Text", sans-serif;
+    }
+    .StyleGuide img{
+        width: 90%;
+        border-radius: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .StyleGuide .figma-logo{
+        width: 50px;
+    }
+    
+}
+
